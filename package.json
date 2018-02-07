@@ -37,7 +37,7 @@
     "lint:docs-configs": "node tests/validate-docs.js",
     "lint:css": "cd docs && stylelint css/*.css",
     "docs": "cd docs && bundle exec jekyll serve",
-    "postinstall": "opencollective postinstall"
+    "postinstall": "npm run build -s && opencollective postinstall"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
